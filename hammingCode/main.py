@@ -137,7 +137,7 @@ def posParityBits(data, p):
     d = len(data)
     newData = []
     top = {}
-    bottom = {i:abs(i - d - p) for i in range(9, 0, -1)}
+    bottom = {i:abs(i - d - p) for i in range(d + p, 0, -1)}
 
     dataIndex = d - 1
     parityIndex = 0
